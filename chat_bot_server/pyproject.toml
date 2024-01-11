@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "chat-bot-server"
+version = "0.1.0"
+description = ""
+authors = ["jonathantoaf <yonitoaf123@gmail.com>"]
+readme = "README.md"
+packages = [{include = "chat_bot_server"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
