@@ -8,6 +8,9 @@ packages = [{include = "chat_bot_server"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+soundfile = "^0.12.1"
+google-cloud-speech = "^2.23.0"
+numpy = "^1.26.3"
 
 
 [build-system]
