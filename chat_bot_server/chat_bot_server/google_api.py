@@ -1,7 +1,7 @@
-from google.cloud import speech_v1p1beta1 as speech
 import os
-import os, ssl
+import ssl
 
+from google.cloud import speech_v1p1beta1 as speech
 
 if (not os.environ.get('PYTHONHTTPSVERIFY', '') and getattr(ssl, '_create_unverified_context', None)):
     ssl._create_default_https_context = ssl._create_unverified_context
@@ -14,7 +14,7 @@ def authenticate_google_cloud():
     Returns:
         None
     """
-    keyfile_path = '/Users/jonathan/Documents/GitHub/chat_bot_repo/chat_bot_server/keys/qualified-root-410910-33c1b0c0a7f4.json'
+    keyfile_path = '/Users/jonathan/Documents/GitHub/chat_bot_repo/chat_bot_server/keys/qualified-root-410910-4b648be28622.json'
     
     # Set the environment variable for Google Cloud credentials
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = keyfile_path
