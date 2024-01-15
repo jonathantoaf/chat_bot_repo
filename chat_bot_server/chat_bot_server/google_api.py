@@ -14,10 +14,11 @@ def authenticate_google_cloud():
     Returns:
         None
     """
-    keyfile_path = '/Users/jonathan/Documents/GitHub/chat_bot_repo/chat_bot_server/keys/qualified-root-410910-4b648be28622.json'
-    
+    keyfile_path = r'chat_bot_server\keys\qualified-root-410910-33c1b0c0a7f4.json'
+
     # Set the environment variable for Google Cloud credentials
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = keyfile_path
+
 
 def speech_to_text(audio_file_path, language_code='en-US'):
     """
@@ -53,8 +54,9 @@ def speech_to_text(audio_file_path, language_code='en-US'):
 
     return transcribed_text
 
+
 # Example usage
-audio_file_path = '/Users/jonathan/Documents/GitHub/chat_bot_repo/chat_bot_server/data/14-208-0001.wav'
+audio_file_path = r'C:\Users\yonit\Documents\GitHub\chat_bot_repo\chat_bot_server\data\14-208-0001.wav'
 transcribed_text = speech_to_text(audio_file_path)
 print("Transcribed Text:")
 print(transcribed_text)
