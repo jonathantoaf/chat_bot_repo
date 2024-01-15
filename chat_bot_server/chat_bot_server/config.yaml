@@ -1,0 +1,5 @@
+openai:
+  api_key: ${OPENAI_API_KEY:}
+
+google_cloud:
+  api_key: ${GOOGLE_CLOUD_API_KEY:}
