@@ -23,7 +23,3 @@ google-cloud-translate = "^3.14.0"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[[tool.poetry.source]]
-default = true
-name = "arti"
-url = "https://jf.originai.co/artifactory/api/pypi/pypi/simple"
