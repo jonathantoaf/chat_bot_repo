@@ -8,8 +8,18 @@ packages = [{include = "chat_bot_server"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+google-cloud-speech = "^2.23.0"
+soundfile = "^0.12.1"
+numpy = "^1.26.3"
+fastapi = "^0.109.0"
+uvicorn = "^0.25.0"
+python-multipart = "^0.0.6"
+dependency-injector = "^4.41.0"
+googletrans = "^3.0.0"
+google-cloud-translate = "^3.14.0"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
