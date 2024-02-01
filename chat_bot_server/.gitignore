@@ -1,1 +1,7 @@
 .venv
+data
+keys
+__pycache__
+.DS_Store
+
+```
