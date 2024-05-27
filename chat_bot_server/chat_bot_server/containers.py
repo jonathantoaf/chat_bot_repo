@@ -1,9 +1,9 @@
 from dependency_injector import containers, providers
 from dependency_injector.wiring import Provide, inject
 
-from chat_bot_server.clients.file_system_client import fileSystemClient
+from chat_bot_server.clients.file_system_client import FileSystemClient
 from chat_bot_server.clients.google_client import googleClient
-from chat_bot_server.services.chat_bot_service import chatBotService
+from chat_bot_server.services.chat_bot_service import ChatBotService
 from pathlib import Path
 
 class Container(containers.DeclarativeContainer):
@@ -11,7 +11,7 @@ class Container(containers.DeclarativeContainer):
     config = providers.Configuration()
 
     file_system_client = providers.Singleton(
-        fileSystemClient
+        FileSystemClient
     )
 
     google_client = providers.Singleton(
@@ -20,7 +20,7 @@ class Container(containers.DeclarativeContainer):
     )
 
     chat_bot_service = providers.Singleton(
-        chatBotService,
+        ChatBotService,
         file_system_client=file_system_client,
         google_client=google_client,
         audio_files_dir=Path("/Users/jonathan/Documents/BarIlan/chat_bot_repo/chat_bot_server/data")

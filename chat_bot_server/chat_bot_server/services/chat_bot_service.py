@@ -2,14 +2,14 @@ import logging
 from fastapi import UploadFile
 from pathlib import Path
 
-from chat_bot_server.clients.file_system_client import fileSystemClient
+from chat_bot_server.clients.file_system_client import FileSystemClient
 from chat_bot_server.clients.google_client import googleClient
 
 
-class chatBotService:
+class ChatBotService:
     def __init__(
         self,
-        file_system_client: fileSystemClient,
+        file_system_client: FileSystemClient,
         google_client: googleClient,
         audio_files_dir: Path
     ) -> None:

@@ -6,7 +6,7 @@ import soundfile as sf
 from fastapi import UploadFile
 
 
-class fileSystemClient:
+class FileSystemClient:
     def __init__(self) -> None:
         self.__logger = logging.getLogger(f"{__name__}.{self.__class__.__name__}")
 

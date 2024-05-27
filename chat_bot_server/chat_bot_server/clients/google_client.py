@@ -5,12 +5,12 @@ from typing import Any, Dict
 from google.cloud import speech_v1p1beta1 as speech
 from google.cloud import translate_v2 as translate
 
-from chat_bot_server.clients.file_system_client import fileSystemClient
+from chat_bot_server.clients.file_system_client import FileSystemClient
 
 
 class googleClient:
     def __init__(
-        self, file_system_client: fileSystemClient
+        self, file_system_client: FileSystemClient
     ) -> None:
         self.__logger = logging.getLogger(f"{__name__}.{self.__class__.__name__}")
         self.file_system_client = file_system_client
